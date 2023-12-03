@@ -27,7 +27,7 @@ const Category = () => {
             key={idx}
             className={`p-2 ${
               item.id === selectedItem ? "border-b-4" : ""
-            } hover:border-b-4 hover:border-black font-bold`}
+            } hover:border-b-4 hover:border-black font-bold text-xs md:text-base lg:text-lg`}
             onClick={() => handleItemClick(item.id)}
           >
             <a href={item.href}>{item.name}</a>
