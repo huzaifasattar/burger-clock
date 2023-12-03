@@ -20,7 +20,7 @@ const Category = () => {
     setSelectedItem(id === selectedItem ? null : id);
   };
   return (
-    <nav className="sticky top-10 z-50 bg-white p-3 drop-shadow-2xl ">
+    <nav className="sticky top-7 md:top-10 lg:top-10 z-50 bg-white p-3 drop-shadow-2xl ">
       <ul className="list-none flex space-x-3 justify-center ">
         {navItems.map((item, idx) => (
           <li
