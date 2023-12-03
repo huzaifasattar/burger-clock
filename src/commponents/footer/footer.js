@@ -43,7 +43,7 @@ const Footer = () => {
         height={100}
         alt="footer"
       />
-      <h2 className="text-white font-bold">
+      <h2 className="text-white font-bold text-xs md:text-base lg:text-lg text-center">
         POWERED BY Indolj |{" "}
         <a href="/" className="border-b">
           Privacy Policy
