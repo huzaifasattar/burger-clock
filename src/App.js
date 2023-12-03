@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import AddToCart from "./commponents/cart/addToCart";
+import Hero from "./commponents/hero/hero";
+import Navbar from "./commponents/navbar/navbar";
+import ProductDis from "./commponents/product/productDis";
+import "./tailwind.css";
+import Footer from "./commponents/footer/footer";
 
 function App() {
+  const [isCartOpen, setIsCartOpen] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="bg-amber-400 text-white flex justify-center p-2 font-bold sticky top-0 right-0 left-0 z-50 w-screen">
+        Supporting our local beverage, Pakola now available
+      </div>
+      <Navbar setIsCartOpen={setIsCartOpen} isCartOpen={isCartOpen} />
+      <Hero />
+      <ProductDis />
+      <AddToCart setIsCartOpen={setIsCartOpen} isCartOpen={isCartOpen} />
+      <Footer />
     </div>
   );
 }
