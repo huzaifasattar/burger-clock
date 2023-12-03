@@ -10,7 +10,7 @@ function App() {
   const [isCartOpen, setIsCartOpen] = useState(false);
   return (
     <div>
-      <div className="bg-amber-400 text-white flex justify-center p-2 font-bold sticky top-0 right-0 left-0 z-50 w-screen">
+      <div className="bg-amber-400 text-white flex justify-center text-xs md:text-base lg:text-lg p-2 font-bold sticky top-0 right-0 left-0 z-50 w-screen">
         Supporting our local beverage, Pakola now available
       </div>
       <Navbar setIsCartOpen={setIsCartOpen} isCartOpen={isCartOpen} />
