@@ -19,7 +19,7 @@ const AddToCart = ({ isCartOpen, setIsCartOpen }) => {
 
   return (
     <div
-      className={`h-full fixed w-96 bg-gray-100 z-50 transition-all top-0 ${
+      className={`h-full fixed w-[350px] bg-gray-100 z-50 transition-all top-0 overflow-auto ${
         isCartOpen ? "right-[0px]" : "right-[-400px]"
       }`}
     >
